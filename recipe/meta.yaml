@@ -1,17 +1,17 @@
 {% set name = "colcon-ros" %}
-{% set version = "0.3.15" %}
+{% set version = "0.3.16" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/colcon/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 60ee9362296bc815e5f076678590655e67055d05db2f5ca0c40f8cfe94bf95d5
+  sha256: aa48fd380dcdf595de5135fc05648aee6b5245aaf3c1f49064125e195f31cea6
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
