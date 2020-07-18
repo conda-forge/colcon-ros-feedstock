@@ -5,7 +5,7 @@ Home: https://github.com/colcon/colcon-ros
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: An extension for colcon-core to support ROS packages.
 
