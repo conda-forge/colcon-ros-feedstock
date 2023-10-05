@@ -1,11 +1,11 @@
-About colcon-ros
-================
+About colcon-ros-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colcon-ros-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/colcon/colcon-ros
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colcon-ros-feedstock/blob/main/LICENSE.txt)
 
 Summary: An extension for colcon-core to support ROS packages.
 
