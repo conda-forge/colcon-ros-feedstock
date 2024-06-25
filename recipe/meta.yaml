@@ -17,19 +17,23 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.6
   run:
-    - python >=3.5
-    - catkin_pkg
+    - python >=3.6
+    - catkin_pkg >=0.4.14
     - colcon-cmake >=0.2.6
-    - colcon-core >=0.3.18
+    - colcon-core >=0.7.0
     - colcon-pkg-config
-    - colcon-python-setup-py
+    - colcon-python-setup-py >=0.2.4
     - colcon-recursive-crawl
 
 test:
   imports:
-    - {{ name.replace("-", "_") }}
+    - colcon_ros
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/colcon/{{ name }}
